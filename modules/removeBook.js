@@ -1,4 +1,4 @@
-export default function removeBook(i) {
+export const removeBook = (i) => {
   let books = localStorage.getItem('books');
   if (books == null) {
     books = [];

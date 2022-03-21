@@ -1,4 +1,4 @@
-function getNumberSuffix(num) {
+const getNumberSuffix = (num) => {
   if (num >= 11 && num <= 20) return '<sup>th</sup>';
 
   const lastDigit = num.toString().slice(-1);
@@ -15,7 +15,7 @@ function getNumberSuffix(num) {
   }
 }
 
-export default function dateTime() {
+export const dateTime = () => {
   const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
     'July', 'August', 'September', 'October', 'November', 'December',
   ];
