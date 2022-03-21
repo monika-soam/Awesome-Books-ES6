@@ -1,24 +1,15 @@
 {
-  "name": "awesome-books-es6",
+  "name": "git",
   "version": "1.0.0",
-  "description": "My Awesome Books is a basic website that allows users to add/remove books from a list and achieved that by using JavaScript objects and arrays.",
-  "main": "main.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/monika-soam/Awesome-Books-ES6.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/monika-soam/Awesome-Books-ES6/issues"
-  },
-  "homepage": "https://github.com/monika-soam/Awesome-Books-ES6#readme",
   "devDependencies": {
-    "@types/luxon": "^2.3.1",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
@@ -30,7 +21,7 @@
     "stylelint-scss": "^3.21.0"
   },
   "dependencies": {
-    "full-icu": "^1.4.0",
-    "luxon": "^2.3.1"
+    "luxon": "^2.3.1",
+    "save": "^2.4.0"
   }
 }

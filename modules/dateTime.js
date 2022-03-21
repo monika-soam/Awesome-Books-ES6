@@ -14,6 +14,7 @@ function getNumberSuffix(num) {
       return '<sup>th</sup>';
   }
 }
+
 export default function dateTime() {
   const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
     'July', 'August', 'September', 'October', 'November', 'December',

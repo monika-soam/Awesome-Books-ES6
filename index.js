@@ -1,8 +1,7 @@
 import addBook from './modules/addBook.js';
 import listBooks from './modules/listBooks.js';
 import removeBook from './modules/removeBook.js';
-import dateTime from './modules/dateTime.js';
-// const { DateTime } = require("luxon");
+import { DateTime } from './node_modules/luxon/src/luxon.js';
 
 const addButton = document.getElementById('addbtn');
 const title = document.getElementById('title');
@@ -78,7 +77,8 @@ listbook.addEventListener('click', () => {
 
 window.onload = () => {
   showMyBooks();
+
   setInterval(() => {
-    document.getElementsByClassName('date-time')[0].innerHTML = dateTime();
+    document.getElementsByClassName('date-time')[0].innerHTML = DateTime.now().toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);
   }, 1000);
 };
