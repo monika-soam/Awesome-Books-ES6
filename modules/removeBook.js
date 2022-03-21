@@ -8,6 +8,4 @@ export default function removeBook(i) {
 
   books.splice(i, 1);
   localStorage.setItem('books', JSON.stringify(books));
-
-
 }

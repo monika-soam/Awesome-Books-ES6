@@ -1,5 +1,5 @@
 export default function addBook(title, author) {
-  let newBook = { "title": title, "author": author };
+  const newBook = { title, author };
   let books = localStorage.getItem('books');
   if (books == null) {
     books = [];
@@ -8,5 +8,4 @@ export default function addBook(title, author) {
   }
   books.push(newBook);
   localStorage.setItem('books', JSON.stringify(books));
-
 }

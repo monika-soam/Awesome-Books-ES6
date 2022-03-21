@@ -11,7 +11,7 @@ My Awesome Books is a basic website that allows users to add/remove books from a
 - JavaScript
 
 ## Live Demo
-[Live Demo Link]( https://monika-soam.github.io/My-Awesome-books/)
+[Live Demo Link]( https://monika-soam.github.io/Awesome-Books-ES6/)
 
 
 Getting Started

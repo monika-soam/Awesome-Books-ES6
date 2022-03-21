@@ -1,8 +1,7 @@
 export default function bookList() {
-  let books = localStorage.getItem('books');
+  const books = localStorage.getItem('books');
   if (books == null) {
     return [];
-  } else {
-    return JSON.parse(books);
   }
+  return JSON.parse(books);
 }
