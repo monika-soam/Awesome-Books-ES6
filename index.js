@@ -1,6 +1,6 @@
-import { addBook } from './modules/addBook.js';
-import { listBooks } from './modules/listBooks.js';
-import { removeBook } from './modules/removeBook.js';
+import addBook from './modules/addBook.js';
+import listBooks from './modules/listBooks.js';
+import removeBook from './modules/removeBook.js';
 import { DateTime } from './node_modules/luxon/src/luxon.js';
 
 const addButton = document.getElementById('addbtn');
@@ -30,7 +30,7 @@ const removeMyBook = (i) => {
       removeMyBook(i);
     });
   }
-}
+};
 
 const showMyBooks = () => {
   const books = listBooks();
@@ -47,7 +47,7 @@ const showMyBooks = () => {
       removeMyBook(i);
     });
   }
-}
+};
 
 addButton.addEventListener('click', () => {
   addBook(title.value, author.value);

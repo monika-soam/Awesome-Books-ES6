@@ -13,9 +13,9 @@ const getNumberSuffix = (num) => {
     default:
       return '<sup>th</sup>';
   }
-}
+};
 
-export const dateTime = () => {
+const dateTime = () => {
   const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
     'July', 'August', 'September', 'October', 'November', 'December',
   ];
@@ -24,4 +24,6 @@ export const dateTime = () => {
 
   const dateString = `${monthNames[date.getMonth()]} ${date.getDate()} ${getNumberSuffix(date.getDate())} ${date.getFullYear()}, ${date.toLocaleTimeString()}`;
   return dateString;
-}
+};
+
+export default dateTime;
