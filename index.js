@@ -2,6 +2,7 @@ import addBook from './modules/addBook.js';
 import listBooks from './modules/listBooks.js';
 import removeBook from './modules/removeBook.js';
 import dateTime from './modules/dateTime.js';
+// const { DateTime } = require("luxon");
 
 const addButton = document.getElementById('addbtn');
 const title = document.getElementById('title');
@@ -15,6 +16,23 @@ const listbook = document.getElementById('listsec');
 const showcontact = document.getElementById('contactsec');
 const removeButtons = document.getElementsByClassName('btn-remove');
 
+function removeMyBook(i) {
+  removeBook(i);
+  const books = listBooks();
+  displayBook.innerHTML = '';
+  for (let i = 0; i < books.length; i += 1) {
+    displayBook.innerHTML += `<tr>
+      <td class="book-title">"${books[i].title}" by ${books[i].author}</td>
+      <td class="button-remove"><button type="button" class="btn-remove">remove</button></td>
+    </tr>`;
+  }
+  for (let i = 0; i < removeButtons.length; i += 1) {
+    removeButtons[i].addEventListener('click', () => {
+      removeMyBook(i);
+    });
+  }
+}
+
 function showMyBooks() {
   const books = listBooks();
   displayBook.innerHTML = '';
@@ -24,7 +42,6 @@ function showMyBooks() {
       <td class="button-remove"><button type="button" class="btn-remove">remove</button></td>
     </tr>`;
   }
-
 
   for (let i = 0; i < removeButtons.length; i += 1) {
     removeButtons[i].addEventListener('click', () => {
@@ -41,11 +58,6 @@ addButton.addEventListener('click', () => {
   addbook.classList.add('invisible');
   showMyBooks();
 });
-
-function removeMyBook(i) {
-  removeBook(i);
-  showMyBooks();
-}
 
 addnewbook.addEventListener('click', () => {
   addbook.classList.remove('invisible');
