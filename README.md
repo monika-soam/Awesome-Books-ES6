@@ -1,7 +1,7 @@
 # My-Awesome-books in ES6![](https://img.shields.io/badge/Microverse-blueviolet)
 
 
-My Awesome Books is a basic website that allows users to add/remove books from a list and achieved that by using JavaScript objects and arrays.
+My Awesome Books is a basic website that allows users to add/remove books from a list and achieved that by using JavaScript ES6 and used modules in a single JS file.
 
 
 ## Built With
@@ -9,6 +9,7 @@ My Awesome Books is a basic website that allows users to add/remove books from a
 - HTML & CSS
 - linters
 - JavaScript
+
 
 ## Live Demo
 [Live Demo Link]( https://monika-soam.github.io/Awesome-Books-ES6/)
