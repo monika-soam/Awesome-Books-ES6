@@ -13,6 +13,9 @@ My Awesome Books is a basic website that allows users to add/remove books from a
 ## Live Demo
 [Live Demo Link]( https://monika-soam.github.io/Awesome-Books-ES6/)
 
+## ScreenShot Demo
+![AddBook Page](./images/AddBook.png)
+
 
 Getting Started
 To get the content of this project locally you need to run this command in your terminal:
