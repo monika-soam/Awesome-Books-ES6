@@ -1,0 +1,20 @@
+{
+  "name": "awesome-books-es6",
+  "version": "1.0.0",
+  "description": "My Awesome Books is a basic website that allows users to add/remove books from a list and achieved that by using JavaScript objects and arrays.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monika-soam/Awesome-Books-ES6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/monika-soam/Awesome-Books-ES6/issues"
+  },
+  "homepage": "https://github.com/monika-soam/Awesome-Books-ES6#readme"
+}
